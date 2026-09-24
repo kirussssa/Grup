@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grup — быстрое и надёжное подключение</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container topbar__row">
+    <a href="#top" class="brand">
+      <img src="logo.png" alt="Grup" class="brand__logo">
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#features">Преимущества</a>
+      <a href="#pricing">Тарифы</a>
+      <a href="#start">Как начать</a>
+    </nav>
+
+    <a href="https://t.me/Grup_VPN_bot" target="_blank" rel="noopener" class="btn btn--white btn--sm nav-cta">Подключиться</a>
+
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="container hero__inner">
+
+      <div class="hero__top">
+        <span class="pill">
+          <span class="pill__dot"></span>
+          Без регистрации — только конфиг и подключение
+        </span>
+        <div class="hero__meta">
+          <span>1, 3 или 5 устройств</span>
+          <span class="dotsep">•</span>
+          <span>Аптайм 99.9%</span>
+          <span class="dotsep">•</span>
+          <span>от 89 ₽</span>
+        </div>
+      </div>
+
+      <div class="hero__body">
+        <div class="hero__text">
+          <h1 class="hero__title">Grup</h1>
+          <p class="hero__subtitle">Простой и стабильный VPN. Оплатили — получили доступ, без анкет и подтверждений.</p>
+          <p class="hero__flags"><img class="flag flag--md" src="nl.png" alt="Нидерланды" loading="lazy"><img class="flag flag--md" src="de.png" alt="Германия" loading="lazy"><img class="flag flag--md" src="se.png" alt="Швеция" loading="lazy"><img class="flag flag--md" src="fi.png" alt="Финляндия" loading="lazy"></p>
+          <div class="hero__actions">
+            <a href="#pricing" class="btn btn--white">Выбрать тариф</a>
+            <a href="#start" class="btn btn--dark">Как начать</a>
+          </div>
+        </div>
+
+        <div class="hero__panel">
+          <p class="hero__panel-label">Что входит в подключение</p>
+          <ul class="hero__panel-list">
+            <li>Шифрование трафика по современным протоколам</li>
+            <li>Тариф на 1, 3 или 5 устройств — под ваши задачи</li>
+            <li>Конфиг приходит сразу после оплаты</li>
+            <li>Поддержка на связи 24/7</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="statbar">
+      <div class="container statbar__row">
+        <div class="stat">
+          <span class="stat__value">10 сек</span>
+          <span class="stat__label">среднее время подключения</span>
+        </div>
+        <div class="stat">
+          <span class="stat__value">1–5</span>
+          <span class="stat__label">устройств на выбор в тарифе</span>
+        </div>
+        <div class="stat">
+          <span class="stat__value">4</span>
+          <span class="stat__label">страны в сети серверов</span>
+        </div>
+        <div class="stat">
+          <span class="stat__value">24/7</span>
+          <span class="stat__label">поддержка на связи</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="container">
+      <h2 class="section-title">Почему выбирают Grup</h2>
+      <div class="features__grid">
+        <div class="feature">
+          <h3>Без регистрации</h3>
+          <p>Не нужна почта, телефон или аккаунт. Сайт выдаёт доступ сразу после оплаты тарифа.</p>
+        </div>
+        <div class="feature">
+          <h3>Серверы в Европе <span class="flags"><img class="flag flag--sm" src="nl.png" alt="Нидерланды" loading="lazy"><img class="flag flag--sm" src="de.png" alt="Германия" loading="lazy"><img class="flag flag--sm" src="se.png" alt="Швеция" loading="lazy"><img class="flag flag--sm" src="fi.png" alt="Финляндия" loading="lazy"></span></h3>
+          <p>Точки подключения в разных странах — выбирайте ближайшую локацию для минимальной задержки.</p>
+        </div>
+        <div class="feature">
+          <h3>Честная скорость</h3>
+          <p>Серверы держат нагрузку без резких просадок — видео и звонки идут без рывков.</p>
+        </div>
+        <div class="feature">
+          <h3>Понятные тарифы</h3>
+          <p>Чем длиннее срок — тем ниже цена за месяц. Никаких скрытых продлений без предупреждения.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <h2 class="section-title section-title--light">Выберите тариф</h2>
+
+      <div class="tabs" role="tablist">
+        <button class="tab is-active" data-devices="1" role="tab" aria-selected="true">1 устройство</button>
+        <button class="tab" data-devices="3" role="tab" aria-selected="false">3 устройства</button>
+        <button class="tab" data-devices="5" role="tab" aria-selected="false">5 устройств</button>
+      </div>
+
+      <div class="plans" id="plans"></div>
+    </div>
+  </section>
+
+  <section class="geo" id="geo">
+    <div class="container geo__inner">
+      <div class="geo__text">
+        <span class="pill pill--dark">
+          <span class="pill__dot"></span>
+          География
+        </span>
+        <h2 class="geo__title">Сервер там, где нужно</h2>
+        <p class="geo__subtitle">Четыре точки в Европе. Выберите ближайшую локацию и сократите задержку.</p>
+        <div class="geo__stats">
+          <div class="geo__stat">
+            <span class="geo__stat-value">10 Gbit/s</span>
+            <span class="geo__stat-label">максимальный канал</span>
+          </div>
+          <div class="geo__stat">
+            <span class="geo__stat-value">4 страны</span>
+            <span class="geo__stat-label">география сети</span>
+          </div>
+          <div class="geo__stat">
+            <span class="geo__stat-value">99.9%</span>
+            <span class="geo__stat-label">целевой аптайм</span>
+          </div>
+          <div class="geo__stat">
+            <span class="geo__stat-value">24/7</span>
+            <span class="geo__stat-label">мониторинг узлов</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="geo__list">
+        <div class="geo__item">
+          <img class="flag flag--lg" src="nl.png" alt="Нидерланды" loading="lazy">
+          <div class="geo__place"><span class="geo__country">Нидерланды</span><span class="geo__city">Амстердам</span></div>
+        </div>
+        <div class="geo__item">
+          <img class="flag flag--lg" src="de.png" alt="Германия" loading="lazy">
+          <div class="geo__place"><span class="geo__country">Германия</span><span class="geo__city">Франкфурт</span></div>
+        </div>
+        <div class="geo__item">
+          <img class="flag flag--lg" src="se.png" alt="Швеция" loading="lazy">
+          <div class="geo__place"><span class="geo__country">Швеция</span><span class="geo__city">Стокгольм</span></div>
+        </div>
+        <div class="geo__item">
+          <img class="flag flag--lg" src="fi.png" alt="Финляндия" loading="lazy">
+          <div class="geo__place"><span class="geo__country">Финляндия</span><span class="geo__city">Хельсинки</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="start" id="start">
+    <div class="container start__inner">
+      <h2 class="section-title">Как начать</h2>
+      <ol class="steps">
+        <li><span class="steps__num">1</span><div><h3>Выберите тариф</h3><p>Определитесь со сроком доступа и числом устройств.</p></div></li>
+        <li><span class="steps__num">2</span><div><h3>Оплатите</h3><p>Без создания аккаунта — только оплата удобным способом.</p></div></li>
+        <li><span class="steps__num">3</span><div><h3>Получите конфиг</h3><p>Ссылка на подключение приходит сразу же, доступ активен несколько секунд спустя.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__row">
+    <div class="footer__brand">
+      <img src="logo.png" alt="Grup" class="brand__logo brand__logo--sm">
+    </div>
+    <div class="footer__links">
+      <a href="user-agreement.html">Пользовательское соглашение</a>
+      <a href="privacy-policy.html">Политика конфиденциальности</a>
+    </div>
+    <p class="footer__copy">© <span id="year"></span> Grup</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
